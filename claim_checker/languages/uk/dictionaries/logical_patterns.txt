@@ -1,0 +1,58 @@
+# Ukrainian logical fallacy patterns
+# Format: fallacy_type,pattern
+
+# Ad hominem (attacking the person)
+ad_hominem,{person} не розуміє
+ad_hominem,{person} не знає про що каже
+ad_hominem,{person} некомпетентний
+ad_hominem,що {person} може знати
+ad_hominem,{person} не має права говорити про
+ad_hominem,{person} завжди помиляється
+ad_hominem,{person} просто дурний
+ad_hominem,не слухайте {person}
+
+# False dichotomy (black and white thinking)
+false_dichotomy,або {option1}, або {option2}
+false_dichotomy,якщо не {option1}, то {option2}
+false_dichotomy,лише два варіанти
+false_dichotomy,тільки {option1} або {option2}
+false_dichotomy,немає іншого вибору
+false_dichotomy,третього не дано
+
+# Appeal to authority
+appeal_to_authority,{authority} сказав
+appeal_to_authority,на думку {authority}
+appeal_to_authority,за словами {authority}
+appeal_to_authority,як стверджує {authority}
+appeal_to_authority,{authority} довів
+appeal_to_authority,{authority} вважає
+
+# Slippery slope
+slippery_slope,це призведе до
+slippery_slope,це лише початок
+slippery_slope,наступним буде
+slippery_slope,якщо дозволити {cause}, то скоро {extreme_consequence}
+slippery_slope,сьогодні {cause}, а завтра {extreme_consequence}
+
+# Hasty generalization
+hasty_generalization,усі знають
+hasty_generalization,всі {group} завжди
+hasty_generalization,жоден {group} ніколи
+hasty_generalization,кожен {group}
+hasty_generalization,я ще не бачив {group}, який би не
+hasty_generalization,скрізь так
+hasty_generalization,завжди так було
+
+# Appeal to emotion
+appeal_to_emotion,подумайте про дітей
+appeal_to_emotion,як ви можете ігнорувати
+appeal_to_emotion,це просто жахливо
+appeal_to_emotion,кожен, хто не згоден, повинен соромитися
+appeal_to_emotion,як ви можете спати вночі, знаючи
+appeal_to_emotion,це розбиває серце
+
+# Straw man
+straw_man,ви кажете, що {exaggerated_claim}
+straw_man,тобто на вашу думку {exaggerated_claim}
+straw_man,іншими словами, ви вважаєте, що {exaggerated_claim}
+straw_man,ви насправді маєте на увазі, що {exaggerated_claim}
