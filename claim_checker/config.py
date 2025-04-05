@@ -2,6 +2,7 @@
 """
 Module for working with claim_checker configuration.
 """
+
 import os
 from pathlib import Path
 from typing import Any, Dict, Optional

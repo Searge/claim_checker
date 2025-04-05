@@ -2,11 +2,12 @@
 """
 Core module for claim_checker that coordinates the analysis process.
 """
+
 from pathlib import Path
 from typing import Any, Dict
 
 from claim_checker.analyzer.analyzer import Analyzer
-from claim_checker.detector.detector import Detector
+from claim_checker.detector.detector import EnhancedDetector
 from claim_checker.logic_gates.pipeline import LogicPipeline
 from claim_checker.reporter.reporter import Reporter
 
@@ -25,7 +26,7 @@ def analyze_text(text: str, language: str, config: Dict[str, Any]) -> Dict[str, 
     """
     # Initialize main components
     analyzer = Analyzer(language, config)
-    detector = Detector(language, config)
+    detector = EnhancedDetector(language, config)
     reporter = Reporter(language, config)
     pipeline = LogicPipeline(config)
 

@@ -2,6 +2,7 @@
 """
 Logic pipeline module for processing results.
 """
+
 from typing import Any, Dict
 
 

@@ -3,7 +3,9 @@
 Tests for Ukrainian language resources.
 """
 import pytest
+
 from claim_checker.languages.uk.loader import UkrainianResourceLoader
+
 
 def test_emotional_words_loading():
     """Test loading emotional words dictionary."""
@@ -17,6 +19,7 @@ def test_emotional_words_loading():
     assert isinstance(intensity, int)
     assert polarity in (-1, 1)
 
+
 def test_intensifiers_loading():
     """Test loading intensifiers dictionary."""
     loader = UkrainianResourceLoader()
@@ -27,6 +30,7 @@ def test_intensifiers_loading():
     # Check the value is an integer
     assert isinstance(intensifiers["дуже"], int)
 
+
 def test_hedges_loading():
     """Test loading hedges dictionary."""
     loader = UkrainianResourceLoader()
@@ -36,6 +40,7 @@ def test_hedges_loading():
     assert "можливо" in hedges
     # Check the value is an integer
     assert isinstance(hedges["можливо"], int)
+
 
 def test_logical_patterns_loading():
     """Test loading logical fallacy patterns."""

@@ -2,6 +2,7 @@
 """
 Text analyzer module.
 """
+
 from typing import Any, Dict, List
 
 

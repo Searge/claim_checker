@@ -2,8 +2,10 @@
 """
 Module for loading Ukrainian language resources.
 """
+
 from pathlib import Path
-from typing import Dict, List, Tuple, Any, Optional
+from typing import Any, Dict, List, Optional, Tuple
+
 
 class UkrainianResourceLoader:
     """
@@ -144,5 +146,5 @@ class UkrainianResourceLoader:
             "emotional_words": self.load_emotional_words(),
             "intensifiers": self.load_intensifiers(),
             "hedges": self.load_hedges(),
-            "logical_patterns": self.load_logical_patterns()
+            "logical_patterns": self.load_logical_patterns(),
         }

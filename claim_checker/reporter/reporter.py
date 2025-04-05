@@ -2,6 +2,7 @@
 """
 Report generator module.
 """
+
 from typing import Any, Dict, List
 
 
@@ -31,9 +32,40 @@ class Reporter:
         Returns:
             Report as a dictionary
         """
-        # Stub for MVP
+        # Count issues
+        fallacies_count = len(results.get("logical_fallacies", []))
+        unsupported_count = len(results.get("unsupported_claims", []))
+        emotional_count = len(results.get("emotional_language", []))
+        hedge_count = len(results.get("hedges", []))
+
+        total_issues = (
+            fallacies_count + unsupported_count + emotional_count + hedge_count
+        )
+
+        # Calculate score (100 - deductions)
+        score = 100
+        if total_issues > 0:
+            # Deduct points based on issues found
+            score -= fallacies_count * 5  # 5 points per logical fallacy
+            score -= unsupported_count * 3  # 3 points per unsupported claim
+            score -= emotional_count * 1  # 1 point per emotional language
+            score = max(0, score)  # Ensure score is not negative
+
+        # Generate recommendations
+        recommendations = []
+        if fallacies_count > 0:
+            recommendations.append("Consider revising logical fallacies in your text.")
+        if unsupported_count > 0:
+            recommendations.append("Provide evidence for your claims.")
+        if emotional_count > 0:
+            recommendations.append("Consider using more neutral language.")
+
         return {
-            "summary": {"issues_count": 0, "overall_score": 100, "recommendations": []},
+            "summary": {
+                "issues_count": total_issues,
+                "overall_score": score,
+                "recommendations": recommendations,
+            },
             "details": results,
             "visualizations": {},
         }
