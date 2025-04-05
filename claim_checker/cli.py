@@ -4,7 +4,7 @@ Command-line interface for claim_checker.
 """
 
 from pathlib import Path
-from typing import Any, Dict, Optional
+from typing import Optional
 
 import typer
 

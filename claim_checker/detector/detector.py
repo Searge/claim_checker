@@ -4,7 +4,7 @@ Enhanced detector module that uses Ukrainian dictionaries.
 """
 
 import re
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List
 
 from claim_checker.languages.uk.loader import UkrainianResourceLoader
 
