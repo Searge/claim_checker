@@ -1,5 +1,5 @@
 [project]
-name = "claim-checker"
+name = "claim_checker"
 version = "0.1.0"
 description = "Text analysis tool that identifies potential issues with logic, bias, and factual accuracy"
 readme = "README.md"
@@ -66,4 +66,4 @@ select = ["E", "F", "B", "I"]
 ignore = []
 
 [project.scripts]
-claim-checker = "claim_checker.cli:app"
+claim_checker = "claim_checker.cli:app"
