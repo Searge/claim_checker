@@ -1,0 +1,17 @@
+# Main configuration for claim_checker
+version: 0.1.0
+default_language: uk
+
+modules:
+  analyzer:
+    enabled: true
+  detector:
+    enabled: true
+  reporter:
+    enabled: true
+  logic_gates:
+    enabled: true
+
+logging:
+  level: INFO
+  file: logs/claim_checker.log

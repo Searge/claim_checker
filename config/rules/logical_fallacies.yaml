@@ -1,0 +1,15 @@
+# Rules for detecting logical fallacies
+rules:
+  ad_hominem:
+    description: "Attack on the person instead of the argument"
+    patterns:
+      - "{person} doesn't understand"
+      - "{person} doesn't know"
+    severity: high
+
+  false_dichotomy:
+    description: "False dichotomy (black and white thinking)"
+    patterns:
+      - "either {option1}, or {option2}"
+      - "if not {option1}, then {option2}"
+    severity: medium

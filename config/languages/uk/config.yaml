@@ -1,0 +1,14 @@
+# Configuration for Ukrainian language
+language:
+  code: uk
+  name: Ukrainian
+  resources:
+    dictionaries:
+      - emotional_words
+      - intensifiers
+      - hedges
+    models:
+      - tokenizer
+      - lemmatizer
+      - pos_tagger
+      - ner
