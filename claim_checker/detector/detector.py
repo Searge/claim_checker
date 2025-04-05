@@ -2,7 +2,7 @@
 """
 Logical fallacy detector module.
 """
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 
 class Detector:
@@ -10,7 +10,7 @@ class Detector:
     Class for detecting logical fallacies and unsupported claims.
     """
 
-    def __init__(self, language: str, config: Dict[str, Any]):
+    def __init__(self, language: str, config: Dict[str, Any]) -> None:
         """
         Initializes the detector for a specific language.
 

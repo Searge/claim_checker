@@ -10,7 +10,7 @@ class LogicPipeline:
     Class for applying logic rules to analysis results.
     """
 
-    def __init__(self, config: Dict[str, Any]):
+    def __init__(self, config: Dict[str, Any]) -> None:
         """
         Initializes the logic pipeline.
 

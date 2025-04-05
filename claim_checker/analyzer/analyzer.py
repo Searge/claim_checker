@@ -2,7 +2,7 @@
 """
 Text analyzer module.
 """
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 
 class Analyzer:
@@ -10,7 +10,7 @@ class Analyzer:
     Class for analyzing linguistic characteristics of text.
     """
 
-    def __init__(self, language: str, config: Dict[str, Any]):
+    def __init__(self, language: str, config: Dict[str, Any]) -> None:
         """
         Initializes the analyzer for a specific language.
 

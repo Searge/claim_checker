@@ -2,7 +2,7 @@
 """
 Report generator module.
 """
-from typing import Any, Dict
+from typing import Any, Dict, List
 
 
 class Reporter:
@@ -10,7 +10,7 @@ class Reporter:
     Class for generating reports based on analysis results.
     """
 
-    def __init__(self, language: str, config: Dict[str, Any]):
+    def __init__(self, language: str, config: Dict[str, Any]) -> None:
         """
         Initializes the report generator for a specific language.
 

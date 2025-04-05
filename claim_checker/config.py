@@ -4,7 +4,7 @@ Module for working with claim_checker configuration.
 """
 import os
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 import yaml
 
@@ -29,7 +29,7 @@ def load_config() -> Dict[str, Any]:
         raise FileNotFoundError(f"Configuration file not found: {config_path}")
 
     with open(config_path, "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
+        config = yaml.safe_load(f) or {}  # Ensure we don't get None
 
     # Load language resources
     default_language = config.get("default_language", "uk")
@@ -37,7 +37,7 @@ def load_config() -> Dict[str, Any]:
 
     if language_config_path.exists():
         with open(language_config_path, "r", encoding="utf-8") as f:
-            language_config = yaml.safe_load(f)
+            language_config = yaml.safe_load(f) or {}
             config["language"] = language_config.get("language", {})
 
     return config

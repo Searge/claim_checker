@@ -1,0 +1,4 @@
+This is a sample text for testing the claim_checker tool.
+It contains some statements that may or may not be logical.
+All people either love or hate chocolate.
+The mayor said the new policy is terrible, but he's not very smart.
