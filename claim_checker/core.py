@@ -3,12 +3,13 @@
 Core module for claim_checker that coordinates the analysis process.
 """
 from pathlib import Path
-from typing import Dict, Any, Union
+from typing import Any, Dict, Union
 
 from claim_checker.analyzer.analyzer import Analyzer
 from claim_checker.detector.detector import Detector
-from claim_checker.reporter.reporter import Reporter
 from claim_checker.logic_gates.pipeline import LogicPipeline
+from claim_checker.reporter.reporter import Reporter
+
 
 def analyze_text(text: str, language: str, config: Dict[str, Any]) -> Dict[str, Any]:
     """
@@ -40,7 +41,10 @@ def analyze_text(text: str, language: str, config: Dict[str, Any]) -> Dict[str, 
 
     return report
 
-def analyze_file(file_path: Path, language: str, config: Dict[str, Any]) -> Dict[str, Any]:
+
+def analyze_file(
+    file_path: Path, language: str, config: Dict[str, Any]
+) -> Dict[str, Any]:
     """
     Analyzes a file for logical fallacies and bias.
 

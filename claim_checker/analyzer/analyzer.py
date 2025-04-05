@@ -2,7 +2,8 @@
 """
 Text analyzer module.
 """
-from typing import Dict, Any
+from typing import Any, Dict
+
 
 class Analyzer:
     """
@@ -35,9 +36,6 @@ class Analyzer:
             "text_length": len(text),
             "language": self.language,
             "emotional_language": [],
-            "readability": {
-                "score": 0,
-                "level": "unknown"
-            },
-            "metadata": {}
+            "readability": {"score": 0, "level": "unknown"},
+            "metadata": {},
         }

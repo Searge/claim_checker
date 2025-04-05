@@ -2,7 +2,8 @@
 """
 Report generator module.
 """
-from typing import Dict, Any
+from typing import Any, Dict
+
 
 class Reporter:
     """
@@ -32,11 +33,7 @@ class Reporter:
         """
         # Stub for MVP
         return {
-            "summary": {
-                "issues_count": 0,
-                "overall_score": 100,
-                "recommendations": []
-            },
+            "summary": {"issues_count": 0, "overall_score": 100, "recommendations": []},
             "details": results,
-            "visualizations": {}
+            "visualizations": {},
         }

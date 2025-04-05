@@ -4,9 +4,10 @@ Module for working with claim_checker configuration.
 """
 import os
 from pathlib import Path
-from typing import Dict, Any
+from typing import Any, Dict
 
 import yaml
+
 
 def get_config_dir() -> Path:
     """Returns the path to the configuration directory."""
@@ -17,6 +18,7 @@ def get_config_dir() -> Path:
 
     # If not found, use the standard path
     return Path(__file__).parent.parent / "config"
+
 
 def load_config() -> Dict[str, Any]:
     """Loads the main configuration and language resources."""

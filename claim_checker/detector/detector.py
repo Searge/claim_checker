@@ -2,7 +2,8 @@
 """
 Logical fallacy detector module.
 """
-from typing import Dict, Any
+from typing import Any, Dict
+
 
 class Detector:
     """
@@ -36,5 +37,5 @@ class Detector:
             "logical_fallacies": [],
             "unsupported_claims": [],
             "consistency_issues": [],
-            "references": []
+            "references": [],
         }

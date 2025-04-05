@@ -2,7 +2,8 @@
 """
 Logic pipeline module for processing results.
 """
-from typing import Dict, Any
+from typing import Any, Dict
+
 
 class LogicPipeline:
     """
